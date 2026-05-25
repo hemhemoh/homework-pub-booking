@@ -135,8 +135,7 @@ def verify_dataflow(flyer_content: str) -> IntegrityResult:
 
     if not deduped:
         return IntegrityResult(
-            ok=True, summary="no extractable facts in flyer (verified vacuously)"
-        )
+            ok=True, summary="no extractable facts in flyer (verified vacuously)")
 
     verified: list[str] = []
     unverified: list[str] = []
